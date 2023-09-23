@@ -57,13 +57,13 @@ document.querySelector(".btn.shop-btn").before(build3L);
 
 let build4L = document.createElement('div');
 build4L.classList.add("btn", "b4");
-build4L.textContent = "Load 4";
+build4L.textContent = "-/+";
 build4L.addEventListener('click', () => { setBuild(4) });
 document.querySelector(".btn.shop-btn").before(build4L);
 
 let build5L = document.createElement('div');
 build5L.classList.add("btn", "b5");
-build5L.textContent = "Load 5";
+build5L.textContent = "waves";
 build5L.addEventListener('click', () => { setBuild(5) });
 document.querySelector(".btn.shop-btn").before(build5L);
 
