@@ -76,7 +76,7 @@ const buttonStyleSave = `
   padding: 0px 0px; // Adjust the padding as needed
   font-size: 12px; // Adjust the font size as needed
   position: absolute;
-  right: -1450px;
+  right: -1410px;
   top: -150px;
   background-color: Black; /* Set the background color to green */
   color: white; /* Set text color to white for better visibility */
