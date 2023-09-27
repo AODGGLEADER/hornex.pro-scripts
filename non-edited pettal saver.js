@@ -56,35 +56,35 @@ document.querySelector(".btn.shop-btn").before(build5S);
 // load button
 let build1L = document.createElement('div');
 build1L.classList.add("btn");
-build1L.textContent = "1";
+build1L.textContent = "DPS";
 build1L.addEventListener('click', () => { setBuild(1) });
 build1L.addEventListener('touchstart', () => { setBuild(1) });
 document.querySelector(".btn.shop-btn").before(build1L);
  
 let build2L = document.createElement('div');
 build2L.classList.add("btn");
-build2L.textContent = "2";
+build2L.textContent = "Rice";
 build2L.addEventListener('click', () => { setBuild(2) });
 build2L.addEventListener('touchstart', () => { setBuild(2) });
 document.querySelector(".btn.shop-btn").before(build2L);
  
 let build3L = document.createElement('div');
-build3L.classList.add("btn");
-build3L.textContent = "3";
+build3L.classList.add("Salt");
+build3L.textContent = "L3";
 build3L.addEventListener('click', () => { setBuild(3) });
 build3L.addEventListener('touchstart', () => { setBuild(3) });
 document.querySelector(".btn.shop-btn").before(build3L);
  
 let build4L = document.createElement('div');
-build4L.classList.add("btn");
-build4L.textContent = "4";
+build4L.classList.add("Waves");
+build4L.textContent = "L4";
 build4L.addEventListener('click', () => { setBuild(4) });
 build4L.addEventListener('touchstart', () => { setBuild(4) });
 document.querySelector(".btn.shop-btn").before(build4L);
  
 let build5L = document.createElement('div');
-build5L.classList.add("btn");
-build5L.textContent = "5";
+build5L.classList.add("Summon");
+build5L.textContent = "L5";
 build5L.addEventListener('click', () => { setBuild(5) });
 build5L.addEventListener('touchstart', () => { setBuild(5) });
 document.querySelector(".btn.shop-btn").before(build5L);
@@ -276,7 +276,31 @@ async function setBuild(i) {
     }
     await closeInventory();
 }
- 
+
+const buttonStyle = `
+ display: block;
+  margin: 0.5px 0;
+  width: auto;
+  height: auto;
+  padding: 0px 0px; // Adjust the padding as needed
+  font-size: 12px; // Adjust the font size as needed
+  position: absolute;
+`;
+
+toggleBTN.style.csstext = buttonStyle;
+removeBTN.style.cssText = buttonStyle;
+build1S.style.cssText = buttonStyle;
+build2S.style.cssText = buttonStyle;
+build3S.style.cssText = buttonStyle;
+build4S.style.cssText = buttonStyle;
+build5S.style.cssText = buttonStyle;
+build1L.style.cssText = buttonStyle;
+build2L.style.cssText = buttonStyle;
+build3L.style.cssText = buttonStyle;
+build4L.style.cssText = buttonStyle;
+build5L.style.cssText = buttonStyle;
+
+
 function toggleButton() {
     build1S.classList.toggle('hidden');
     build2S.classList.toggle('hidden');
