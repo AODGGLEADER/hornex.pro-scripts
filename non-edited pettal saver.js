@@ -69,22 +69,22 @@ build2L.addEventListener('touchstart', () => { setBuild(2) });
 document.querySelector(".btn.shop-btn").before(build2L);
  
 let build3L = document.createElement('div');
-build3L.classList.add("Salt");
-build3L.textContent = "L3";
+build3L.classList.add("btn");
+build3L.textContent = "Salt";
 build3L.addEventListener('click', () => { setBuild(3) });
 build3L.addEventListener('touchstart', () => { setBuild(3) });
 document.querySelector(".btn.shop-btn").before(build3L);
  
 let build4L = document.createElement('div');
-build4L.classList.add("Waves");
-build4L.textContent = "L4";
+build4L.classList.add("btn");
+build4L.textContent = "Waves";
 build4L.addEventListener('click', () => { setBuild(4) });
 build4L.addEventListener('touchstart', () => { setBuild(4) });
 document.querySelector(".btn.shop-btn").before(build4L);
  
 let build5L = document.createElement('div');
-build5L.classList.add("Summon");
-build5L.textContent = "L5";
+build5L.classList.add("btn");
+build5L.textContent = "Summon";
 build5L.addEventListener('click', () => { setBuild(5) });
 build5L.addEventListener('touchstart', () => { setBuild(5) });
 document.querySelector(".btn.shop-btn").before(build5L);
